@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABD News WWorldd</title>
+  <title>ABD News World</title>
   <style>
     body {
       margin: 0;
@@ -12,13 +12,13 @@
       color: black;
     }
     header {
-      background-color: #FF0000;
+      background-color: #FF0000; /* Red */
       color: white;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #007BFF;
+      background-color: #007BFF; /* Blue */
       display: flex;
       justify-content: center;
       padding: 10px 0;
@@ -36,24 +36,45 @@
       width: 100px;
       height: auto;
     }
+    .main-content {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+      background-color: #C0C0C0; /* Silver */
+      border-radius: 8px;
+    }
+    .main-news {
+      background-color: #FFD700; /* Gold */
+    }
     .section {
-      padding: 40px;
+      padding: 40px 20px;
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+    }
+    .section h2 {
+      color: #FF0000;
+    }
+    .video-section {
+      background-color: #F0F0F0;
+      padding: 40px 20px;
     }
     footer {
-      background-color: #C0C0C0;
+      background-color: #007BFF; /* Blue */
       text-align: center;
       padding: 20px;
-      color: black;
+      color: white;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="your-logo.png" alt="ABD News WWorldd Logo" class="logo">
-    <h1>ABD News WWorldd</h1>
+    <img src="your-logo.png" alt="ABD News World Logo" class="logo">
+    <h1>ABD News World</h1>
     <p>Truth. Voice. Impact.</p>
   </header>
 
@@ -66,24 +87,38 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="section" id="home">
-    <h2>Welcome to ABD News WWorldd</h2>
-    <p>Your one-stop platform for bold, authentic, and frontline journalism.</p>
+  <section class="main-content">
+    <div class="column" style="background-color:#FF0000; color: white;">
+      <h3>Advertisements</h3>
+      <p>Place ads or partner logos here.</p>
+    </div>
+
+    <div class="column main-news">
+      <h3>Frontline Reports</h3>
+      <img src="thumbnail.jpg" alt="Main News Thumbnail" style="width:100%; border-radius: 8px;">
+      <h4>Breaking: Major Event</h4>
+      <p>Meta Description: A short summary of the top news story appearing here. This is your featured headline.</p>
+    </div>
+
+    <div class="column" style="background-color:#FFFFFF;">
+      <h3>Latest Uploads</h3>
+      <ul style="list-style:none; padding:0;">
+        <li><strong>Story 2:</strong> Title of recent post</li>
+        <li><strong>Story 3:</strong> Another recent update</li>
+        <li><strong>Story 4:</strong> More news content here</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="video-section" id="visual">
+    <h2>Visual Pulse</h2>
+    <p>Watch our latest video:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <section class="section" id="about">
     <h2>About Me</h2>
     <p>This section will include your introduction, YouTube journey, and mission.</p>
-  </section>
-
-  <section class="section" id="frontline">
-    <h2>Frontline Reports</h2>
-    <p>Here you will publish detailed reports on current events, ground stories, and investigations.</p>
-  </section>
-
-  <section class="section" id="visual">
-    <h2>Visual Pulse</h2>
-    <p>Embed your latest YouTube videos here for visual storytelling.</p>
   </section>
 
   <section class="section" id="unfiltered">
@@ -97,7 +132,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 ABD News WWorldd. All rights reserved.</p>
+    <p>&copy; 2025 ABD News World. All rights reserved.</p>
   </footer>
 
 </body>
